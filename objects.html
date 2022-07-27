@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            font-size: large;
+            color:green
+        }
+        p{
+            font-size: x-large;
+            color:maroon;
+            background-color:paleturquoise;
+        }
+        span{
+            font-size:x-large;
+            color:black;
+            background-color:peachpuff;
+        }
+    </style>
+</head>
+<h1>Objects , events in Java Script</h1>
+<body>
+    <h2>Click the below button to get time !</h2>
+    <!-- This is click event in javascript -->
+    <button onclick="getElementById('demo').innerHTML=Date()">click to get currentTime!</button><br>
+    <p id="demo"></p>
+    <button onclick="this.innerHTML=Date()">click to get currentTime!</button> <br> <br>
+    <!-- This is mouseover event in JavaScript -->
+    <span onmouseover="this.style.backgroundColor='red'">My Area!</span><br>
+
+    <script src="./objects.js"></script>
+</body>
+</html>

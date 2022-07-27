@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <h1><i>Java Script Practice Page</i></h1>
+<body>
+    <script>
+        // types of variables in JS 
+        // 1.var ----> This is a global variable in js(function level scope)
+            var num = 20;
+            document.write(num);
+
+        // 2. let ---> this variable used for block level scope (in if-else,loops statements) 
+        var workday = true;
+            let todaysPlan = "To do push ups";
+        //    let todaysPlan = "To do push ups"; // cannont reassign 
+            
+            if (workday) {
+                let todaysPlan = "To do lunges";
+                console.log(`You have ${todaysPlan} today.`);
+            }
+
+            console.log(`You have ${todaysPlan} today.`);
+
+        // 3.const ----> const variable have block level scope (we cannot reassign same variable) 
+        const myName = 'Pradip';
+        // const myName = 'chavan'; //here it will give error.
+
+      // === comaprison operator compares value and its type 
+        var name = 'Pradip';
+        var name1 = 'Pradip';
+        document.write(name==name1);
+       
+    // Trail of variables , operator
+    
+        var week = false;
+        let today = "sunday";
+        if(week){
+            let today = "Saturday"
+            alert(`Today is ${today} .`);
+        }else
+        alert(`Today is ${today} .`);
+    </script>
+</body>
+</html>
